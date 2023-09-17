@@ -60,20 +60,23 @@
  ;; (use-package shades-of-purple-theme
  ;;   :config (load-theme 'shades-of-purple t))
 
+(use-package cyberpunk-theme
+  :config (load-theme 'cyberpunk t))
+
  ; Use Doom Themes
-(use-package doom-themes
- :ensure t
- :config
- ; Global settings (defaults)
- (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-     doom-themes-enable-italic t) ; if nil, italics is universally disabled
- (load-theme 'my-shades-of-purple t)
+;; (use-package doom-themes
+;;  :ensure t
+;;  :config
+;;  ; Global settings (defaults)
+;;  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+;;      doom-themes-enable-italic t) ; if nil, italics is universally disabled
+;;  (load-theme 'my-shades-of-purple t)
 
- ; Overwrite begin/end line color
- ;; (custom-set-faces
+;;  ; Overwrite begin/end line color
+;;  ;; (custom-set-faces
 
- ; Corrects (and improves) org-mode's native fontification.
- (doom-themes-org-config))
+;;  ; Corrects (and improves) org-mode's native fontification.
+;;  (doom-themes-org-config))
   ;; (use-package haki-theme
   ;; :config
   ;; (setq haki-region "#2e8b6d"
@@ -90,8 +93,8 @@
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
-(use-package nyan-mode
-  :config (nyan-mode t))
+;; (use-package nyan-mode
+;;   :config (nyan-mode t))
 
 (use-package rust-mode
     :bind(("C-c r" . rust-run))
